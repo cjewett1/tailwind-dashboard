@@ -1,0 +1,347 @@
+<!doctype html>
+<html  lang="en">
+<head>
+  <title>Tailwind Dashboard Prototype</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-gray-300 text-black-200 font-sans py-4 shadow-lg shadow-blue-400/20 " >
+    <!-- Container -->
+    <div class="2x1:container md:flex md:justify-between md:items-center md:mx-auto ">
+        <!-- Logo and toggle -->
+        <div class="flex justify-between items-center p-2.5">
+          <a class="block tracking-wider text-2xl hover:text-blue-900" href="index.html"> <h1>Dashboard</h1> </a>
+          <button class="rounded focus:outline-none focus:ring focus:ring-white-300" >
+            <svg class=" md:hidden fill-current w-6 h-6 hover:fill-blue-900 " viewbox="0 0 100 80">
+              <rect width="100" height="20" rx="10"></rect>
+              <rect width="100" height="20" rx="10" y="30"></rect>
+              <rect width="100" height="20" rx="10" y="60"></rect>
+            </svg>
+          </button>
+        </div>
+
+
+        <!-- Nav -->
+        <nav class="mt-8 md:mt-0 ">
+          <ul class="md:flex gap-5 md:mr-5" >
+              <li class="leading-10 border-t-2 border-blue-900 md:border-t-0 md:hover:shadow-blue-500 md:hover:shadow-lg "><a class="flex mt-1 tracking-wide rounded hover:ring-2 hover:ring-white" href="#">Notifications
+                <span class="flex relative place-content-center h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                </span>
+              </a>
+            </li>
+            <li class=" flex items-center leading-10 border-t-2 border-blue-900 md:border-t-0 md:hover:shadow-blue-500 md:hover:shadow-lg rounded hover:ring-2 hover:ring-white mr-1"><a class="block tracking-wide" href="#">Activity</a><img class="h-8" src="img/activity.png" alt=""></li>
+            <li class="flex items-center leading-10 border-t-2 border-blue-900 md:border-t-0 md:hover:shadow-blue-500 md:hover:shadow-lg rounded hover:ring-2 hover:ring-white mr-1"><a class="block tracking-wide" href="#">Account</a> <img class="h-8" src="img/account.png" alt=""></li>
+            <li class="flex items-center leading-10 border-t-2 border-blue-900 md:border-t-0 md:hover:shadow-blue-500 md:hover:shadow-lg rounded hover:ring-2 hover:ring-white mr-1"><a class="block tracking-wide" href="#">Messages</a> <img class="h-8" src="img/messages.png" alt=""></li>
+            <li class="flex items-center leading-10 border-t-2 border-blue-900 md:border-t-0 md:hover:shadow-blue-500 md:hover:shadow-lg rounded hover:ring-2 hover:ring-white mr-1"><a class="block tracking-wide" href="#">Settings</a> <img class="h-8" src="img/settings.png" alt=""></li>
+            <li class="flex items-center leading-10 border-t-2 border-blue-900 md:border-t-0 md:hover:shadow-blue-500 md:hover:shadow-lg rounded hover:ring-2 hover:ring-white mr-1  "><a class="block tracking-wide" href="#">Tools</a>  <img class="h-8" src="img/tools.png" alt=""></li>
+            <li class="flex items-center leading-10 border-t-2 border-blue-900 md:border-t-0 md:hover:shadow-blue-500 md:hover:shadow-lg rounded hover:ring-2 hover:ring-white mr-1"><a class="block tracking-wide" href="#">Sign Out</a> <img class="h-8" src="img/right-arrow.png" alt=""> </li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+
+
+
+
+
+  
+  <div class="md:flex">
+      <div class="2xl:container mx-auto px-4 py-4 2xl:px-0">
+        <div>
+          <h1 class="text-2xl p-5 text-center" >Projects</h1>
+        </div>
+        <!-- grid-container -->
+        <div class="grid md:grid-cols-2  gap-10 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <section class="rounded border-2 border-black p-4 shadow-lg shadow-blue-400/30">
+            <header class="border-b-2 border-slate-400 pb-2 mb-4">
+              <div class=" flex items-center justify-center mb-4">
+                <div class="w-12 h-12 mr-2 ">
+                  <img src="img/plan-yellow.png" alt="">
+                </div>
+                <h2 class="text-2xl">Prototype Development</h2>
+              </div>
+                <ul class="flex gap-x-2.5 justify-center ">
+                  <li><a class="block  hover:text-sky-500  " href="#">PDF Download (1)</a></li>
+                </ul>
+            </header>
+            <div class="mt-5">
+              <p>
+                This is the Prototype Development card, please use this to communicate with other group members and to plan out what the next steps will be.
+              </p>
+            </div>
+            <div>
+            <div class="flex-col mt-5  justify-center items-center">
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 5%"></div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-1 " >
+              <div class=""><p class="text-xs" >Start: Oct 26, 2022</p></div>
+              <div><p class="text-xs" >End: Aug 10, 2023</p></div>
+            </div>
+          </div>
+          <div class="p-5" >
+            <p class="underline mb-1 " >Latest Comment:</p>
+            <p class="mb-1" >Michelle: Hey guys, I had an idea about the prototype that I think will help us out....</p>
+            <div class="flex justify-between" >
+              <p class="text-sky-400 hover:cursor-pointer">View</p>
+              <p class="text-red-500 hover:cursor-pointer">Delete</p>
+              <p class="hover:text-green-500 hover:cursor-pointer">Reply</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex items-center">
+            <img class="h-10 hover:ring-1 rounded-md " src="img/messages.svg" alt="">
+            <p class="pl-2" >18</p>
+            </div>
+            <div class="flex items-center" >
+            <img  class="h-8 hover:ring-1 rounded-md " src="img/team-members.svg" alt="">
+            <p class="pl-2" >9</p>
+            </div>
+          </div>   <!--End of .svg messages container-->
+            <div>
+              <p class="text-xs text-center text-black text-opacity-50 hover:text-black hover:cursor-pointer ">Archive</p>
+            </div>
+          </section>
+          <!-- Card 2 -->
+          <section class="rounded border-2 border-black p-4 shadow-lg shadow-blue-400/30">
+            <header class="border-b-2 border-slate-400 pb-2 mb-4">
+              <div class=" flex items-center justify-center mb-4">
+                <div class="w-12 h-12 mr-2">
+                  <img src="img/plan-blue.png" alt="">
+                </div>
+                <h2 class="text-2xl">Development Planning</h2>
+              </div>
+                <ul class="flex gap-x-2.5 justify-center ">
+                  <li><p class="block text-black text-opacity-30">PDF Download</p></li>
+                </ul>
+            </header>
+            <div class="mt-5">
+              <p>
+                This is the Development planning card, please use this to communicate with other group members and to plan out what the next steps will be.
+              </p>
+            </div>
+            <div>
+            <div class="flex-col mt-5  justify-center items-center">
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-1 " >
+              <div class=""><p class="text-xs" >Start: Nov 15, 2022</p></div>
+              <div><p class="text-xs" >End: Sept 30, 2023</p></div>
+            </div>
+          </div>
+          <div class="p-5" >
+            <p class="underline mb-1 " >Latest Comment:</p>
+            <p class="mb-1" >Jason: I have create a detailed timeline for us to adhere to. It could help us stay organized and...</p>
+            <div class="flex justify-between" >
+              <p class="text-sky-400 hover:cursor-pointer">View</p>
+              <p class="text-red-500 hover:cursor-pointer">Delete</p>
+              <p class="hover:text-green-500 hover:cursor-pointer">Reply</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex items-center">
+            <img class="h-10 hover:ring-1 rounded-md " src="img/messages.svg" alt="">
+            <p class="pl-2" >4</p>
+            </div>
+            <div class="flex items-center" >
+            <img  class="h-8 hover:ring-1 rounded-md " src="img/team-members.svg" alt="">
+            <p class="pl-2" >3</p>
+            </div>
+          </div>   <!--End of .svg messages container-->
+            <div>
+              <p class="text-xs text-center text-black text-opacity-50 hover:text-black hover:cursor-pointer ">Archive</p>
+            </div>
+          </section>
+          <!-- Card 3 -->
+          <section class="rounded border-2 border-black p-4 shadow-lg shadow-blue-400/30">
+            <header class="border-b-2 border-slate-400 pb-2 mb-4">
+              <div class=" flex items-center justify-center mb-4">
+                <div class="w-12 h-12 mr-2">
+                  <img src="img/plan-green.png" alt="">
+                </div>
+                <h2 class="text-2xl">Coding</h2>
+              </div>
+                <ul class="flex gap-x-2.5 justify-center ">
+                  <li><a class="block  hover:text-sky-500  " href="#">PDF Download (11)</a></li>
+                </ul>
+            </header>
+            <div class="mt-5">
+              <p>
+                This is the Coding card, please use this to communicate with other group members and to plan out what the next steps will be.
+              </p>
+            </div>
+            <div>
+            <div class="flex-col mt-5  justify-center items-center ">
+              <div class="w-full bg-gray-200 rounded-full h-2.5  dark:bg-gray-700">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-1 " >
+              <div class=""><p class="text-xs" >Start: Dec 3, 2022</p></div>
+              <div><p class="text-xs" >End: May 28, 2023</p></div>
+            </div>
+          </div>
+          <div class="p-5" >
+            <p class="underline mb-1 " >Latest Comment:</p>
+            <p class="mb-1" >Karli: I think we should take a look at using WordPress for this project, its a great resource...</p>
+            <div class="flex justify-between" >
+              <p class="text-sky-400 hover:cursor-pointer">View</p>
+              <p class="text-red-500 hover:cursor-pointer">Delete</p>
+              <p class="hover:text-green-500 hover:cursor-pointer">Reply</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex items-center">
+            <img class="h-10 hover:ring-1 rounded-md " src="img/messages.svg" alt="">
+            <p class="pl-2" >31</p>
+            </div>
+            <div class="flex items-center" >
+            <img  class="h-8 hover:ring-1 rounded-md " src="img/team-members.svg" alt="">
+            <p class="pl-2" >16</p>
+            </div>
+          </div>   <!--End of .svg messages container-->
+            <div>
+              <p class="text-xs text-center text-black text-opacity-50 hover:text-black hover:cursor-pointer">Archive</p>
+            </div>
+          </section>
+        </div>
+
+            <!-- Small buttons -->
+    <div class=" mt-5 flex justify-center gap-5" >
+      <button class=" shadow-lg shadow-blue-400/30 bg-blue-500 hover:bg-red-500 text-white font-bold py-2 px-4 rounded-full">
+        New Project
+      </button>
+      <button class=" shadow-lg shadow-blue-400/30 bg-red-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full">
+        Edit Projects
+      </button>
+    </div>
+      </div>
+
+      <!-- Messaging Card -->
+<section class="flex flex-col justify-center antialiased text-gray-600 p-4">
+  <div class="h-full">
+      <!-- Card -->
+      <div class="max-w-[360px] mx-auto rounded border-2 border-black p-1 shadow-lg shadow-blue-400/30">
+          <!-- Card header -->
+          <header class="pt-6 pb-4 px-5 border-b border-gray-200">
+              <div class="flex justify-between items-center mb-3">
+                  <!-- User -->
+                  <div class="flex items-center">
+                      <a class="inline-flex items-start mr-3" href="#0">
+                          <img class="rounded-full" src="img/team-members.svg" width="48" height="48" alt="Clinton">
+                      </a>
+                      <div class="pr-1">
+                          <a class="inline-flex text-gray-800 hover:text-gray-900" href="#0">
+                              <h2 class="text-xl font-bold">Clinton</h2>
+                          </a>
+                          <a class="block text-sm font-medium hover:text-sky-400" href="#">@clint</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Info -->
+              <div class="flex flex-wrap justify-center sm:justify-start space-x-4">
+                  <div class="flex items-center">
+                      <span class="text-sm whitespace-nowrap ml-2">Canada</span>
+                  </div>
+                  <div class="flex items-center">
+                      <a class="text-sm font-medium whitespace-nowrap text-indigo-500 hover:text-indigo-600 ml-2" href="#">clint@gmail.com</a>
+                  </div>
+              </div>
+          </header>
+          <!-- Message Card -->
+          <div class="py-3 px-5">
+              <h3 class="text-xs font-semibold uppercase text-gray-400 mb-1">Messages(1) </h3>
+              <!-- Chat list -->
+              <div class="divide-y divide-gray-200">
+                  <!-- User -->
+                  <div class="w-full text-left py-2 focus:outline-none focus-visible:bg-indigo-50">
+                      <div class="flex items-center">
+                          <img class="rounded-full mr-3" src="img/team-members.svg" width="32" height="32" alt="Jason">
+                          <div>
+                              <h4 class="text-sm font-semibold text-gray-900">Kyle James</h4>
+                              <div class="text-s font-bold hover:text-black ">YOOO! whats up?...· Nov 6</div>
+                              <div class="flex gap-4" >
+                                <p class="text-sky-400 hover:text-black hover:cursor-pointer" >Reply</p>
+                                <p class="text-red-500 hover:text-black hover:cursor-pointer" >Delete</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- User -->
+                  <div class="w-full text-left py-2 focus:outline-none focus-visible:bg-indigo-50">
+                    <div class="flex items-center">
+                        <img class="rounded-full mr-3" src="img/team-members.svg" width="32" height="32" alt="Jason">
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-900">Mike Wallace</h4>
+                            <div class="text-s hover:text-black ">Meeting at 2:30 thi...· Nov 6</div>
+                            <div class="flex gap-4" >
+                              <p class="text-sky-400 hover:text-black hover:cursor-pointer" >Reply</p>
+                              <p class="text-red-500 hover:text-black hover:cursor-pointer" >Delete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="w-full text-left py-2 focus:outline-none focus-visible:bg-indigo-50">
+                  <div class="flex items-center">
+                      <img class="rounded-full mr-3" src="img/team-members.svg" width="32" height="32" alt="Jason">
+                      <div>
+                          <h4 class="text-sm font-semibold text-gray-900">Jason Bateman</h4>
+                          <div class="text-s hover:text-black ">Hi Clint, check this out...· Nov 6</div>
+                          <div class="flex gap-4" >
+                            <p class="text-sky-400 hover:text-black hover:cursor-pointer" >Reply</p>
+                            <p class="text-red-500 hover:text-black hover:cursor-pointer" >Delete</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                  <!-- User -->
+                  <div class="w-full text-left py-2 focus:outline-none focus-visible:bg-indigo-50">
+                      <div class="flex items-center">
+                          <img class="rounded-full mr-3" src="img/team-members.svg" width="32" height="32" alt="Michelle">
+                          <div>
+                              <h4 class="text-sm font-semibold text-gray-900">Michelle Kyle</h4>
+                              <div class="text-s hover:text-black ">Hi Clint, just a quick que...· Nov 6</div>
+                              <div class="flex gap-4" >
+                                <p class="text-sky-400 hover:text-black hover:cursor-pointer" >Reply</p>
+                                <p class="text-red-500 hover:text-black hover:cursor-pointer" >Delete</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- User -->
+                  <div class="w-full text-left py-2 focus:outline-none focus-visible:bg-indigo-50">
+                      <div class="flex items-center">
+                          <img class="rounded-full items-start flex-shrink-0 mr-3" src="img/team-members.svg" width="32" height="32" alt="Karli">
+                          <div>
+                              <h4 class="text-sm font-semibold text-gray-900">Karli Karlson</h4>
+                              <div class="text-s hover:text-black ">Have you considered... · Nov 5</div>
+                              <div class="flex gap-4" >
+                                <p class="text-sky-400 hover:text-black hover:cursor-pointer" >Reply</p>
+                                <p class="text-red-500 hover:text-black hover:cursor-pointer" >Delete</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="flex justify-center" >
+                    <p class="text-s pt-4 hover:text-black hover:cursor-pointer ">Expand</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  </div> 
+
+</body>
+</html>
